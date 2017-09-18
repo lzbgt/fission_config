@@ -6,8 +6,8 @@ spec:
   capacity:
     storage: 4Gi
   accessModes:
-    - ReadWriteOnce
-  persistentVolumeReclaimPolicy: Recycle
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
   storageClassName: slow
   nfs:
     path: /nfsshare
